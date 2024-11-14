@@ -81,7 +81,7 @@ nav.nav li a {
 
 .delivery-icon {
     font-size: 50px;
-    color: #ADD981;
+    color: #f50000;
 }
 
 .service-details {
@@ -102,7 +102,7 @@ nav.nav li a {
 .section-title::before {
     content: "";
     position: absolute;
-    background-color: #ADD981;
+    background-color: #ff0000;
     width: 50px;
     height: 7px;
     bottom: 0;
@@ -130,4 +130,40 @@ nav.nav li a {
     flex: 1;
 }
 
+.stick1 {
+    background-image: url(/image/Nos_meilleures_ventes/1.jpg);
+}
+
+.stick2 {
+    background: url(/image/Nos_meilleures_ventes/2.jpg);
+}
+
+.stck3{
+    background: url(/image/Nos_meilleures_ventes/3.jpg);
+}
+
+.stick4 {
+    background: url(/image/Nos_meilleures_ventes/4.jpg);
+}
+
+.stick-details {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+}
+
+.stick-name {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+}
+
+.stick-price {
+    color: #ff0000;
+    line-height: 3px;
+    font-size: 14px;
+    font-weight: 800;
+}
 
