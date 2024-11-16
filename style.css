@@ -167,3 +167,17 @@ nav.nav li a {
     font-weight: 800;
 }
 
+/* nos équipements */
+
+.all-equipement {
+    margin: 100px;
+}
+
+.equipement-grid {
+    display: grid;
+    min-height: 150vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 400px);
+}
+
+
