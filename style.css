@@ -195,6 +195,7 @@ section.top-page {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0 5px;
+    color: black; /* Appliquer la couleur noire aux noms des crosses */
 }
 
 .equipement-price {
@@ -203,6 +204,7 @@ section.top-page {
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 
 /* Pied de page */
 
