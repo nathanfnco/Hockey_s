@@ -1,0 +1,106 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fefefe; /* Fond blanc pour le body*/
+    color: #333;
+}
+
+/* Header du produit */
+header.product-header {
+    padding: 20px;
+    background-color: #1a1a1a; /* Fond noir pour le header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white; /* Texte blanc pour contraste */
+}
+
+header.product-header img {
+    width: 150px; /* Logo de taille fixe */
+    height: auto;
+}
+
+header.product-header .back-link {
+    text-decoration: none;
+    font-size: 16px;
+    color: #ff0000; /* Texte rouge pour les liens */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header.product-header .back-link:hover {
+    color: #e60000; /* Rouge légèrement plus foncé au survol */
+}
+
+/* Contenu du produit */
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex: 1;
+    background-color: #fff; /* Fond blanc pour la section produit */
+    color: #333; /* texte gris foncé */
+}
+
+.product-image img {
+    width: 80%;
+    max-width: 500px;
+    border: 2px solid #ccc; /* Bordure grise autour de l'image */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Description du produit */
+.product-description {
+    text-align: center;
+}
+
+.product-description h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #1a1a1a; /* Titre en noir */
+}
+
+.product-description p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666; /* Texte gris foncé pour plus de lisibilité */
+}
+
+.product-description h3 {
+    margin-top: 20px;
+    color: #ff0000; /* Rouge pour les sous-titres */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Footer du produit */
+footer.product-footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #1a1a1a; /* Fond noir pour le footer */
+    color: white; /* Texte blanc */
+    margin-top: 20px;
+}
+
+footer.product-footer a {
+    color: #ff0000; /* Lien rouge dans le footer */
+    text-decoration: none;
+    font-weight: bold;
+}
+   
+footer.product-footer a:hover {
+    color: #e60000; /* Lien rouge foncé au survol */
+}
