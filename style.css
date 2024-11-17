@@ -213,3 +213,18 @@ nav.nav li a {
     grid-column: 4;
     grid-row: 3/5;
 }
+
+/* pied de page */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+
+footer a.cgv {
+    text-decoration: none;
+    color: black;
+}
