@@ -1,5 +1,11 @@
+/* Inclusion de la nouvelle police */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
-    font-family: 'Montserrat';
+    font-family: 'Roboto', sans-serif; /* Application de la nouvelle police */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -10,37 +16,57 @@ body {
     margin: 0 auto;
 }
 
-/* tete de page */
+/* Tête de page */
 
 header.header {
     display: flex;
     align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
 }
 
 header.header img {
     width: 150px;
 }
 
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    margin-left: auto;
+}
+
+nav.nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav.nav li a:hover {
+    color: #f50000;
+}
+
+/* Section principale */
+
 section.top-page {
-    background: url('/image/Knapper_Ball.jpg');
-    background-size: cover;
+    background: url('/image/Knapper_Ball.jpg') no-repeat center center/cover;
     height: 80vh;
     padding: 25px;
 }
 
-/* page de bienvenue (landing page) */
-
 .landing-page {
     position: relative;
     padding: 20px 50px;
+    color: white;
+    text-align: center;
 }
 
 .big-title {
-    color: white;
-    font-size:  120px;
+    font-size: 120px;
     font-family: 'Abril FatFace', cursive;
     font-weight: 100;
-    width: 60%;
 }
 
 .scroll-down {
@@ -48,29 +74,16 @@ section.top-page {
     text-decoration: none;
     position: absolute;
     bottom: 0;
+    font-size: 18px;
 }
 
-/* menu de navigation */
-
-nav.nav {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    width: 400px;
-    margin-left: 30px;
-}
-
-nav.nav li a {
-    color: white;
-    text-decoration: none;
-}
-
-/* services */
+/* Services */
 
 .services {
     display: flex;
     justify-content: space-evenly;
     margin: 50px;
+    text-align: center;
 }
 
 .service-item {
@@ -82,149 +95,133 @@ nav.nav li a {
 .delivery-icon {
     font-size: 50px;
     color: #f50000;
+    margin-bottom: 10px;
 }
 
 .service-details {
     font-weight: 600;
     width: 200px;
-    text-align: center;
 }
 
-/* best sells */
+/* Meilleures ventes */
+
+.bests-items {
+    margin: 100px 20px;
+}
 
 .section-title {
     font-size: 50px;
     font-family: 'Abril FatFace', cursive;
     font-weight: 100;
+    text-align: center;
     position: relative;
-}
-
-.section-title::before {
-    content: "";
-    position: absolute;
-    background-color: #ff0000;
-    width: 50px;
-    height: 7px;
-    bottom: 0;
-}
-
-.bests-items {
-    margin: 100px;
+    margin-bottom: 40px;
 }
 
 .best-sticks {
-    min-height: 500px;
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-.sticks-box {
-    position: relative;
-    background-size: cover;
-    background-position: center;
+.stick-box {
+    flex: 1 1 calc(25% - 20px);
+    max-width: 300px;
+    text-align: center;
 }
 
-.no-grid {
-    min-width: 350px;
-    height: 500px;
-    flex: 1;
-}
-
-.stick1 {
-    background-image: url(/image/Nos_meilleures_ventes/1.jpg);
-}
-
-.stick2 {
-    background: url(/image/Nos_meilleures_ventes/2.jpg);
-}
-
-.stck3{
-    background: url(/image/Nos_meilleures_ventes/3.jpg);
-}
-
-.stick4 {
-    background: url(/image/Nos_meilleures_ventes/4.jpg);
-}
-
-.stick-details {
-    position: absolute;
+.stick-box img {
     width: 100%;
-    bottom: 0;
-    background-color: #FFFFFFDF;
-    padding: 5px 20px;
+    height: auto;
+    display: block;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.stick-box img:hover {
+    transform: scale(1.05);
 }
 
 .stick-name {
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333; /* Couleur pour correspondre au design propre */
+    text-decoration: none; /* Retire tout soulignement */
+    cursor: default; /* Rend le texte non cliquable */
 }
 
 .stick-price {
-    color: #ff0000;
-    line-height: 3px;
-    font-size: 14px;
-    font-weight: 800;
+    color: #f50000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-decoration: none; /* Retire tout soulignement */
+    cursor: default; /* Rend le texte non cliquable */
 }
 
-/* nos équipements */
-
-.all-equipement {
-    margin: 100px;
-}
-
-.equipement-grid {
+/* Section "Nos équipements" */
+.hockey-equipement {
     display: grid;
-    min-height: 150vh;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 400px);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 15px;
 }
 
-.equipement-grid1 {
-    background-image: url(/image/nos_equipements/1-casque.jpg);
-    grid-column: 1/3;
-    grid-row: 1/3;
+.equipement-box {
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
 }
 
-.equipement-grid2 {
-    background-image: url(/image/nos_equipements/2-jambières.jpg);
-    grid-column: 3/5;
+.equipement-box img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.equipement-grid3 {
-    background-image: url(/image/nos_equipements/3-vetemetns\ de\ protection.jpg);
-    grid-column: 3/5;
+.equipement-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.equipement-grid4 {
-    background-image: url(/image/nos_equipements/4-gants.jpg);
-    grid-column: 1;
-    grid-row: 3/5;
+.equipement-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
 }
 
-.equipement-grid5 {
-    background-image: url(/image/nos_equipements/5-crosses\ de\ hockey.jpg);
-    grid-column: 2/4;
-    grid-row: 3/5;
+.equipement-price {
+    font-size: 16px;
+    color: #f50000;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.equipement-grid6 {
-    background-image: url(/image/nos_equipements/6-accessoires.jpg);
-    grid-column: 4;
-    grid-row: 3/5;
-}
+/* Pied de page */
 
-/* pied de page */
-
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 100px;
-    font-weight: 600;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
 
 footer a.cgv {
     text-decoration: none;
-    color: black;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a.cgv:hover {
+    color: #f50000;
 }
