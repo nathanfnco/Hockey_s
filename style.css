@@ -195,6 +195,37 @@ section.top-page {
     cursor: default; /* Rend le texte non cliquable */
 }
 
+/* Animation pour "Nos meilleures ventes" */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    position: relative;
+    transition: color 0.3s ease; /* Transition fluide pour le changement de couleur */
+}
+
+.section-title:hover {
+    color: #e63946; /* Change le texte en rouge au survol */
+}
+
+/* Ajout d'une animation lumineuse rouge */
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 3px;
+    background: #e63946;
+    transition: width 0.3s ease;
+}
+
+.section-title:hover::after {
+    width: 100%; /* Barre rouge qui s'étend sous le texte */
+}
+
 /* Animation sur les cartes des meilleures ventes */
 .best-sticks .stick-box {
     display: inline-block;
