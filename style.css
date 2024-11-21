@@ -103,6 +103,39 @@ section.top-page {
     width: 200px;
 }
 
+/* "Le hockey, c'est quoi ?" */
+.about-hockey {
+    text-align: center;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    cursor: pointer; /* Curseur pour indiquer l'interractivité */
+
+}
+
+.hockey-title {
+    font-size: 40px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    cursor: pointer; /* Curseur pour indiquer l'interactivité */
+}
+
+.hockey-description {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    opacity: 0; /* Invisible par défaut */
+    max-height: 0; /* Hauteur réduite */
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease; /* Transition pour l'effet fluide */
+}
+
+.hockey-title:hover + .hockey-description {
+    opacity: 1; /* Visible au survol */
+    max-height: 100px; /* Développe la hauteur */
+}
+
+
+
 /* Meilleures ventes */
 
 .bests-items {
