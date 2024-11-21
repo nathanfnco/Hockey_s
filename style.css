@@ -310,6 +310,90 @@ section.top-page {
     margin-bottom: 10px;
 }
 
+/* Conteneur principal */
+.hockey-equipement {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Style de chaque boîte d'équipement */
+.equipement-box {
+    position: relative;
+    background-color: #f9f9f9;
+    border: 2px solid #eaeaea;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Animation au survol */
+.equipement-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image de l'équipement */
+.equipement-box img {
+    width: 100%;
+    border-bottom: 2px solid #eaeaea;
+    transition: transform 0.4s ease;
+}
+
+/* Effet zoom sur l'image au survol */
+.equipement-box:hover img {
+    transform: scale(1.1);
+}
+
+/* Nom de l'équipement */
+.equipement-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+    transition: color 0.4s ease;
+}
+
+/* Texte qui change légèrement de couleur au survol */
+.equipement-box:hover .equipement-name {
+    color: #e63946;
+}
+
+/* Prix de l'équipement */
+.equipement-price {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    transition: color 0.4s ease;
+}
+
+/* Texte du prix qui change au survol */
+.equipement-box:hover .equipement-price {
+    color: #1d3557;
+}
+
+/* Ajout d'un soulignement animé */
+.equipement-box::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 3px;
+    background: #e63946;
+    transition: width 0.4s ease;
+}
+
+.equipement-box:hover::after {
+    width: 80%;
+}
+
 
 /* Pied de page */
 

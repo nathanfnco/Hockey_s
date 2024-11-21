@@ -1,121 +1,137 @@
-* {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* Corps de la page */
+/* Animation et mise en page générale */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #fefefe; /* Fond blanc pour le body*/
+    background: linear-gradient(120deg, #ffffff, #000000);
     color: #333;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header du produit */
+/* Header */
 header.product-header {
     padding: 20px;
-    background-color: #1a1a1a; /* Fond noir pour le header */
+    background-color: rgba(0, 0, 0, 0.9); /* Fond noir opaque */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white; /* Texte blanc pour contraste */
+    color: white;
+    position: fixed; /* Fixe la barre en haut */
+    top: 0; /* Toujours en haut */
+    left: 0;
+    right: 0;
+    width: 100%; /* S'étend sur toute la largeur */
+    z-index: 100; /* Assure qu'elle reste au-dessus du contenu */
+    border-bottom: 2px solid #ff0000; /* Ligne rouge en bas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Légère ombre pour la distinction */
 }
 
-header.product-header img {
-    width: 150px; /* Logo de taille fixe */
-    height: auto;
+/* Espace compensé pour le contenu principal */
+main.product-content {
+    padding-top: 100px; /* Décalage suffisant pour compenser la hauteur de la barre fixe */
 }
 
+/* Liens dans le header */
 header.product-header .back-link {
     text-decoration: none;
     font-size: 16px;
-    color: #ff0000; /* Texte rouge pour les liens */
+    color: #ff0000; /* Rouge vif */
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 header.product-header .back-link:hover {
-    color: #e60000; /* Rouge légèrement plus foncé au survol */
+    transform: scale(1.1);
+    color: #e60000; /* Rouge légèrement plus foncé */
 }
 
-/* Contenu du produit */
-
-.product-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    flex: 1;
-    background-color: #fff; /* Fond blanc pour la section produit */
-    color: #333; /* texte gris foncé */
+header.product-header img {
+    height: 40px; /* Taille ajustée du logo */
+    width: auto;
 }
 
+/* Contenu principal */
+main.product-content {
+    padding-top: 100px; /* Décalage pour compenser la barre fixe */
+}
+
+/* Image du produit avec animation 3D */
 .product-image img {
-    width: 80%;
+    width: 60%;
     max-width: 500px;
-    border: 2px solid #ccc; /* Bordure grise autour de l'image */
-    border-radius: 10px;
-    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
 }
 
-/* Description du produit */
-.product-description {
-    text-align: center;
+.product-image:hover img {
+    transform: rotateY(15deg) rotateX(10deg) scale(1.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
+/* Description */
 .product-description h2 {
-    font-size: 26px;
-    margin-bottom: 10px;
-    color: #1a1a1a; /* Titre en noir */
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
 .product-description p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #666; /* Texte gris foncé pour plus de lisibilité */
+    color: #e0e0e0; /* Gris clair */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
+.product-description ul {
+    list-style-type: disc;
+    margin: 20px auto;
+    padding-left: 20px;
+    text-align: left;
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #fff;
+}
+
+.product-description ul li {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.product-description ul li:hover {
+    transform: translateX(10px);
+    color: #ff0000;
+}
+
+/* Prix */
 .product-description h3 {
     margin-top: 20px;
-    color: #ff0000; /* Rouge pour les sous-titres */
+    color: #ff0000; /* Rouge vif */
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-/* Footer du produit */
+/* Footer */
 footer.product-footer {
     padding: 10px;
     text-align: center;
-    background-color: #1a1a1a; /* Fond noir pour le footer */
-    color: white; /* Texte blanc */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
     margin-top: 20px;
 }
 
 footer.product-footer a {
-    color: #ff0000; /* Lien rouge dans le footer */
+    color: #ff0000;
     text-decoration: none;
     font-weight: bold;
 }
-   
 footer.product-footer a:hover {
-    color: #e60000; /* Lien rouge foncé au survol */
-}
-
-.product-description ul {
-    list-style-type: disc; /* Points pour la liste */
-    margin: 20px auto;
-    padding-left: 20px; /* Décalage à gauche pour l'alignement */
-    text-align: left; /* Aligne les puces à gauche */
-    max-width: 600px; /* Largeur maximale pour centrer */
-}
-
-.product-description ul li {
-    font-size: 16px;
-    line-height: 1.8; /* Espacement pour lisibilité */
-    color: #444; /* Gris plus doux pour le texte */
-    margin-bottom: 10px;
+    color: #e60000;
 }
