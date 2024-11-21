@@ -195,6 +195,47 @@ section.top-page {
     cursor: default; /* Rend le texte non cliquable */
 }
 
+/* Animation sur les cartes des meilleures ventes */
+.best-sticks .stick-box {
+    display: inline-block;
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+}
+
+.best-sticks .stick-box:hover {
+    transform: translateY(-10px) scale(1.05); /* Légére élévation et agraandissement */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Ombre pour donner un effet de relief */
+}
+
+.stick-details img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3 easy; /* Animation sur l'image */
+}
+
+.best-sticks .stick-box:hover .stick-details image {
+    transform: scale(1.1); /* Permet de mettre un zoom sur l'image */
+}
+
+.stick-name, .stick-price {
+    font-size: 16px;
+    color: #333;
+    margin: (5px 0);
+}
+
+.stick-name {
+    font-weight: bold;
+}
+
+.stick-price {
+    color: #e63946;
+}
 /* Section "Nos équipements" */
 .hockey-equipement {
     display: grid;
