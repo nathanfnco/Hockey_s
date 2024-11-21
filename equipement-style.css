@@ -104,3 +104,18 @@ footer.product-footer a {
 footer.product-footer a:hover {
     color: #e60000; /* Lien rouge foncé au survol */
 }
+
+.product-description ul {
+    list-style-type: disc; /* Points pour la liste */
+    margin: 20px auto;
+    padding-left: 20px; /* Décalage à gauche pour l'alignement */
+    text-align: left; /* Aligne les puces à gauche */
+    max-width: 600px; /* Largeur maximale pour centrer */
+}
+
+.product-description ul li {
+    font-size: 16px;
+    line-height: 1.8; /* Espacement pour lisibilité */
+    color: #444; /* Gris plus doux pour le texte */
+    margin-bottom: 10px;
+}
