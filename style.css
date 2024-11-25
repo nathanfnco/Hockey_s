@@ -48,20 +48,34 @@ nav.nav li a:hover {
     color: #f50000;
 }
 
-.landing-page {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh; /* Remplit toute la hauteur de la fenêtre */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white; /* Assure que le texte est lisible */
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Ajoute une ombre pour le texte */
+/* Section principale */
+
+section.top-page {
+    background: url('/image/Knapper_Ball.jpg') no-repeat center center/cover;
+    height: 80vh;
+    padding: 25px;
 }
 
+.landing-page {
+    position: relative;
+    padding: 20px 50px;
+    color: white;
+    text-align: center;
+}
+
+.big-title {
+    font-size: 120px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+}
+
+.scroll-down {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+}
 
 /* Services */
 
