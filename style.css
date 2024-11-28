@@ -1,5 +1,44 @@
-/*nouvelle police */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Nouvelle police : Knapper (remplacez l'URL si nécessaire) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap'); /* Exemple : remplacez par la vraie URL si Knapper utilise une autre source */
+
+* {
+    font-family: 'Open Sans', sans-serif; /* Remplacement de la police */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* Tête de page */
+
+header.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+header.header img {
+    width: 150px;
+}
+
+nav.nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav.nav li a:hover {
+    color: #f50000;
+}
 
 * {
     font-family: 'Roboto', sans-serif; /* Application de la nouvelle police */
