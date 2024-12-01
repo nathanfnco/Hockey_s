@@ -275,7 +275,7 @@ section.top-page {
     border-radius: 10px;
     overflow: hidden;
     background-color: #fff;
-    transition: transform 0.3 ease, box-shadow 0.3 ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .best-sticks .stick-box:hover {
@@ -286,7 +286,7 @@ section.top-page {
 .stick-details img {
     width: 100%;
     height: auto;
-    transition: transform 0.3 easy; /* Animation sur l'image */
+    transition: transform 0.3s easy; /* Animation sur l'image */
 }
 
 .best-sticks .stick-box:hover .stick-details image {
@@ -296,7 +296,8 @@ section.top-page {
 .stick-name, .stick-price {
     font-size: 16px;
     color: #333;
-    margin: (5px 0);
+    margin: 5px 0;
+
 }
 
 .stick-name {
