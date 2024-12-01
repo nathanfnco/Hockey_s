@@ -455,3 +455,31 @@ footer a.cgv {
 footer a.cgv:hover {
     color: #f50000;
 }
+
+.animated-link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.animated-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #e00505;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.animated-link:hover {
+    color: #e00505;
+    transform: scale(1.1);
+}
+
+.animated-link:hover::after {
+    width: 100%;
+}
