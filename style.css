@@ -286,7 +286,7 @@ section.top-page {
 .stick-details img {
     width: 100%;
     height: auto;
-    transition: transform 0.3s easy; /* Animation sur l'image */
+    transition: transform 0.3s ease; /* Animation sur l'image */
 }
 
 .best-sticks .stick-box:hover .stick-details image {
