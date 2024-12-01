@@ -1,3 +1,3 @@
-Ce projet personnel est un site réalisé en css et html, il a pour thèle la reproduction d'un site de vente en ligne de matériels de hockey.
+Ce projet personnel est la création d'un site en HTML et CSS, en tant que passionné et pratiquant de hockey à haut niveau. Soucieux de la difficulté d'accès à du matériel de qualité pour ce sport exigeant, il a décidé de concevoir une platforme de vente en ligne spécialisée dans l'équipement de hockey. Mon objectif est non seulement de rendre ces produits plus accessibles, mais aussi de promouvoir ce sport que j'aime et que je pratique intensivemen, en offrant une vitrine à la fois professionnelle et passionnée pour les autres joueurs et fans de hockey.
 
 🗒️L'adresse du site: https://nathanfnco.github.io/Hockey_s/
